@@ -32,7 +32,13 @@
 		{"name": "SubDivMotionHistogramBackground3"},
 		{"name": "SubDivMotionHistogramBackground5"},
 		{"name": "HOGMirflickr25K512"},
-		{"name": "SURFMirflickr25K512"}
+		{"name": "SURFMirflickr25K512"},
+		{"name": "AudioFingerprint"},
+		{"name": "AverageHPCP20F36B"},
+		{"name": "AverageHPCP30F36B"},
+		{"name": "CENS12Shingle"},
+		{"name": "HPCP12Shingle"},
+		{"name": "MFCCShingle"}
 	],
 	"exporters":[
 		{
