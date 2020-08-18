@@ -1,0 +1,41 @@
+{
+	"type": "IMAGE_SEQUENCE",
+	"input":{
+		"path": "/path/to/image/sequence/collection",
+		"depth": 2,
+		"id": {
+			"name": "SequentialObjectIdGenerator",
+			"properties": {}
+		}
+	},
+	"extractors":[
+		{"name": "AverageColor"},
+		{"name": "AverageColorARP44"},
+		{"name": "AverageColorCLD"},
+		{"name": "AverageColorGrid8"},
+		{"name": "AverageColorRaster"},
+		{"name": "AverageFuzzyHist"},
+		{"name": "AverageColorGrid8Reduced15"},
+		{"name": "CLD"},
+		{"name": "EdgeARP88"},
+		{"name": "EdgeGrid16"},
+		{"name": "EHD"},
+		{"name": "HPCP12Shingle"},
+		{"name": "MedianColor"},
+		{"name": "MedianColorGrid8"},
+		{"name": "HOGMirflickr25K512"},
+		{"name": "SURFMirflickr25K512"}
+	],
+	"exporters":[
+		{
+			"name": "ShotThumbnailsExporter",
+			"properties": {
+				"destination":"/path/to/thumbnails"
+			}
+		}
+	],
+	"database":{
+		"selector": "COTTONTAIL",
+		"writer": "COTTONTAIL"
+	}
+}

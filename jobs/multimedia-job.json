@@ -1,0 +1,59 @@
+{
+	"input":{
+		"path": "/path/to/collection",
+		"depth": 2,
+		"id": {
+			"name": "SequentialObjectIdGenerator",
+			"properties": {}
+		}
+	},
+	"extractors":[
+		{"name": "AudioFingerprint"},
+		{"name": "AverageColor"},
+		{"name": "AverageColorARP44"},
+		{"name": "AverageColorCLD"},
+		{"name": "AverageColorGrid8"},
+		{"name": "AverageColorGrid8Reduced15"},
+		{"name": "AverageColorRaster"},
+		{"name": "AverageFuzzyHist"},
+		{"name": "AverageHPCP20F36B"},
+		{"name": "CENS12Shingle"},
+		{"name": "CLD"},
+		{"name": "EdgeARP88"},
+		{"name": "EdgeGrid16"},
+		{"name": "EHD"},
+		{"name": "HOGMirflickr25K512"},
+		{"name": "HPCP12Shingle"},
+		{"name": "MedianColor"},
+		{"name": "MedianColorGrid8"},
+		{"name": "MFCCShingle"},
+		{"name": "SphericalHarmonicsDefault"},
+		{"name": "SphericalHarmonicsLow"},
+		{"name": "SphericalHarmonicsHigh"},
+		{"name": "SURFMirflickr25K512"}
+	],
+	"exporters":[
+		{
+			"name": "AudioWaveformExporter",
+			"properties": {
+				"destination":"/path/to/thumbnails"
+			}
+		},
+		{
+			"name": "ShotThumbnailsExporter",
+			"properties": {
+				"destination": "/path/to/thumbnails"
+			}
+		},
+		{
+			"name": "Model3DThumbnailExporter",
+			"properties": {
+				"destination": "/path/to/thumbnails"
+			}
+		}
+	],
+	"database":{
+		"selector": "COTTONTAIL",
+		"writer": "COTTONTAIL"
+	}
+}
